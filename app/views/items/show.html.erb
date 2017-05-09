@@ -8,6 +8,8 @@
 <p>
   <strong>Description:</strong>
   <%= @item.description %>
+
+  <%= image_tag "items/#{@item.id}/covershot/middle_finger.jpg" %>
 </p>
 
 <%= link_to 'Edit', edit_item_path(@item) %> |
