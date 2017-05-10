@@ -10,7 +10,7 @@
   <%= @painting.description %>
 </p>
 
-<%= image_tag "paintings/#{@painting.id}/cover/anorak.jpg" %>
+<%= image_tag @painting.cover.url if @painting.cover? %>
 
 <%= link_to 'Edit', edit_painting_path(@painting) %> |
 <%= link_to 'Back', paintings_path %>

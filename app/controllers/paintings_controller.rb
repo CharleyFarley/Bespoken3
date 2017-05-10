@@ -1,5 +1,6 @@
 class PaintingsController < ApplicationController
   before_action :set_painting, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index, :show]
 
   # GET /paintings
   # GET /paintings.json
@@ -24,7 +25,7 @@ class PaintingsController < ApplicationController
   # POST /paintings
   # POST /paintings.json
   def create
-    @painting = Painting.new(painting_params)
+    @painting = current_user.paintings.new(painting_params)
 
     respond_to do |format|
       if @painting.save
