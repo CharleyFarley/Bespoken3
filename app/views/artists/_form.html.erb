@@ -17,8 +17,8 @@
   </div>
 
   <div class="field">
-    <%= f.label :genre %>
-    <%= f.text_field :genre %>
+    <%= f.label :avatar %>
+    <%= f.text_field :avatar %>
   </div>
 
   <div class="field">
@@ -40,6 +40,10 @@
     <%= f.label :days_to_delivery %>
     <%= f.number_field :days_to_delivery %>
   </div>
+
+    <div class="field">
+    <%= f.label :cover %>
+    <%= f.file_field :cover %>
 
   <div class="actions">
     <%= f.submit %>

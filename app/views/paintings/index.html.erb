@@ -5,26 +5,36 @@
   <p>Visible only for superadmins and supervisors! </p>
 <% end %>
 
-<table>
+<div class="center jumbotron">
+  <h2> Welcome to Bespoken, the online home of new artists and their work!</h2>
+<div class="text-center">
+  <div class="btn-group">
+    <%= link_to "Find an Artist", artists_path, class: "btn btn-lrg btn-primary" %> 
+    <%= link_to "Sign Up Now", new_user_registration_path, class: "btn btn-lrg btn-danger" %> 
+    <%= link_to "Read our Blog", blogs_path, class: "btn btn-lrg btn-primary" %> 
+  </div>
+</div>
+</div>
+
+<%= render 'partials/paintings', paintings: @paintings %>
+
+<table class="table">
   <thead>
     <tr>
       <th>Name</th>
       <th>Description</th>
-      <th colspan="3"></th>
+      <th>Image</th>
+      <th colspan="2"></th>
     </tr>
   </thead>
 
   <tbody>
-  <div class="center jumbotron">
-  <h2> Welcome to Bespoken, the online home of new artists and their work!</h2>
-  <%= link_to "Sign Up Now", new_user_registration_path, class: "btn btn-lrg btn-primary" %> 
-  <%= link_to "Find an Artist", artists_path, class: "btn btn-lrg btn-primary" %> 
-  <%= link_to "Read our Blog", posts_path, class: "btn btn-lrg btn-primary" %> </div>
+  
     <% @paintings.each do |painting| %>
       <tr>
         <td><%= painting.name %></td>
         <td><%= painting.description %></td>
-        <%= image_tag painting.cover.url if painting.cover? %>
+        <td><%= image_tag painting.cover.url, width: 200 if painting.cover? %></td>
 
         <td><%= link_to 'Show', painting %></td>
         <td><%= link_to 'Edit', edit_painting_path(painting) %></td>
@@ -36,29 +46,7 @@
 
 <br>
 
+
+
 <%= link_to 'New Painting', new_painting_path %>
 
-<div class="container">
-    <div class="row">
-        <div class="col-xs-3">
-            <a href="#" class="thumbnail">
-                <img src="125x125.jpg" alt="125x125">
-            </a>
-        </div>
-        <div class="col-xs-3">
-            <a href="#" class="thumbnail">
-                <img src="anorak.jpg" alt="125x125">
-            </a>
-        </div>
-        <div class="col-xs-3">
-            <a href="#" class="thumbnail">
-                <img src="125x125.jpg" alt="125x125">
-            </a>
-        </div>
-        <div class="col-xs-3">
-            <a href="#" class="thumbnail">
-                <img src="125x125.jpg" alt="125x125">
-            </a>
-        </div>
-    </div>
-</div>

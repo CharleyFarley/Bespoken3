@@ -6,6 +6,7 @@ class PaintingsController < ApplicationController
   # GET /paintings.json
   def index
     @paintings = Painting.all
+    @top_ten_paintings = Painting.all.limit(8)
   end
 
   # GET /paintings/1

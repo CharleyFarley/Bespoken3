@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   
 
+  resources :blogs
   get 'about/about_us'
 
   get 'about/policy'

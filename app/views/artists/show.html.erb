@@ -6,8 +6,8 @@
 </p>
 
 <p>
-  <strong>Genre:</strong>
-  <%= @artist.genre %>
+  <strong>Image:</strong>
+  <%= image_tag @artist.avatar.url if @artist.avatar %>
 </p>
 
 <p>
@@ -29,6 +29,8 @@
   <strong>Days to delivery:</strong>
   <%= @artist.days_to_delivery %>
 </p>
+
+<p><%= image_tag @artist.avatar.url if @artist.avatar %></p>
 
 <%= link_to 'Edit', edit_artist_path(@artist) %> |
 <%= link_to 'Back', artists_path %>

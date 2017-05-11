@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Genre</th>
+      <th>Image</th>
       <th>Experience in years</th>
       <th>Formally trained</th>
       <th>Review rating</th>
@@ -19,7 +19,7 @@
     <% @artists.each do |artist| %>
       <tr>
         <td><%= artist.name %></td>
-        <td><%= artist.genre %></td>
+        <td><%= artist.avatar %></td>
         <td><%= artist.experience_in_years %></td>
         <td><%= artist.formally_trained %></td>
         <td><%= artist.review_rating %></td>

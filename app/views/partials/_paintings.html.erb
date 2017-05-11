@@ -1,0 +1,10 @@
+<div class="row">
+    <% paintings.each do |painting| %>
+        
+        <div class="col-md-3 col-xs-6 ">
+            <%= link_to image_tag(painting.cover, width: 200, class: :thumbnail), painting_path(painting) %>
+        </div>
+
+    <% end %>
+</div>
+

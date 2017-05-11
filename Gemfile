@@ -42,7 +42,7 @@ gem "mailboxer"
 gem 'mysql2',          '~> 0.3.18'
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'algoliasearch-rails', '~> 1.19', '>= 1.19.1'
-gem 'mini-magick'
+gem 'mini_magick', '~> 4.7'
 
 
 group :development, :test do
@@ -64,3 +64,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+ruby "2.4.1"
