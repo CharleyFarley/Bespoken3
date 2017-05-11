@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  
+
+  get 'about/about_us'
+
+  get 'about/policy'
+
+  resources :artists
+  resources :charges, only: [:new, :create]
   resources :posts
   resources :paintings
   resources :items

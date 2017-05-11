@@ -1,13 +1,11 @@
 class PostsController < ApplicationController
 
-  load_and_authorise_resource
-  
-  before_action :set_post, only: [:show, :edit, :update, :destroy]
+  load_and_authorize_resource
+
 
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
   end
 
   # GET /posts/1
@@ -17,7 +15,6 @@ class PostsController < ApplicationController
 
   # GET /posts/new
   def new
-    @post = Post.new
   end
 
   # GET /posts/1/edit
@@ -27,7 +24,6 @@ class PostsController < ApplicationController
   # POST /posts
   # POST /posts.json
   def create
-    @post = Post.new(post_params)
 
     respond_to do |format|
       if @post.save
@@ -65,10 +61,7 @@ class PostsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_post
-      @post = Post.find(params[:id])
-    end
+   
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params

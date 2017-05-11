@@ -1,6 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Paintings</h1>
+
+<% if can? :manage, User %>
+  <p>Visible only for superadmins and supervisors! </p>
+<% end %>
 
 <table>
   <thead>
@@ -12,10 +15,17 @@
   </thead>
 
   <tbody>
+  <div class="center jumbotron">
+  <h2> Welcome to Bespoken, the online home of new artists and their work!</h2>
+  <%= link_to "Sign Up Now", new_user_registration_path, class: "btn btn-lrg btn-primary" %> 
+  <%= link_to "Find an Artist", artists_path, class: "btn btn-lrg btn-primary" %> 
+  <%= link_to "Read our Blog", posts_path, class: "btn btn-lrg btn-primary" %> </div>
     <% @paintings.each do |painting| %>
       <tr>
         <td><%= painting.name %></td>
         <td><%= painting.description %></td>
+        <%= image_tag painting.cover.url if painting.cover? %>
+
         <td><%= link_to 'Show', painting %></td>
         <td><%= link_to 'Edit', edit_painting_path(painting) %></td>
         <td><%= link_to 'Destroy', painting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -27,3 +37,28 @@
 <br>
 
 <%= link_to 'New Painting', new_painting_path %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-3">
+            <a href="#" class="thumbnail">
+                <img src="125x125.jpg" alt="125x125">
+            </a>
+        </div>
+        <div class="col-xs-3">
+            <a href="#" class="thumbnail">
+                <img src="anorak.jpg" alt="125x125">
+            </a>
+        </div>
+        <div class="col-xs-3">
+            <a href="#" class="thumbnail">
+                <img src="125x125.jpg" alt="125x125">
+            </a>
+        </div>
+        <div class="col-xs-3">
+            <a href="#" class="thumbnail">
+                <img src="125x125.jpg" alt="125x125">
+            </a>
+        </div>
+    </div>
+</div>

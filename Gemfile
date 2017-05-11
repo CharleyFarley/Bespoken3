@@ -37,6 +37,12 @@ gem 'carrierwave', '~> 1.1'
 # gem 'capistrano-rails', group: :development
 gem 'cancancan', '~> 1.16'
 gem 'stripe'
+gem 'dotenv-rails', :groups => [:development, :test]
+gem "mailboxer"
+gem 'mysql2',          '~> 0.3.18'
+gem 'remotipart', github: 'mshibuya/remotipart'
+gem 'algoliasearch-rails', '~> 1.19', '>= 1.19.1'
+gem 'mini-magick'
 
 
 group :development, :test do
