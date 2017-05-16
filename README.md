@@ -2,7 +2,11 @@
 
 ## Pain Point
 
+Local and emerging artists have few options to show off their work and get commissions from people who want to improve the appearance of their home or office. An artists portrait is often the item with the most sentimental value in a home. 
+
 ## Solution
+
+Bespoken is a 2-sided marketplace to allow for new artists to have works commissioned by benefactors, who keep the works. This benefits both parties, as the artist has a new outlet to exhibit work and fund ongoing work, and the benefactor can choose the topic of the work itself. Speaking personally, my most precious object is a portrait of my children painted masterfully by a local artist. The experience made me wonder why it is not far more common.
 
 ## Hosting Solution - Elastic Beanstalk
 
@@ -12,9 +16,10 @@
 
 - After some research, I concluded that AWS in Sydney with an EC2 instance and elastic beanstalk offered the optimum combination of performance and reasonable pricing for Melbourne developers.
 
-## Clone the .git file
 
 ## Assignment Criteria
+
+
 
 ## Tools Used
 
@@ -22,14 +27,26 @@
 - Remember the Milk
 - Figma
 - Sublime Text
-- 
+- Ruby 2.4.0
+- Rails 5.0.2
+- Postgresql 9.6
+- Node.js 6.10.3
 
 ## Entity Relationship Diagram
 
 
 ## Wireframes
 
+Wireframes can be found at [Figma](https://www.figma.com/file/dwydxHCCczx75ObCFBOd8f6M/Bespoken?node-id=16%3A3)
+
 ## Trello
 
+User Stories can be found at [Trello](https://trello.com/b/2DnkijST/cfa-project-bespoken-for-artists)
+
 ## Outstanding Tasks
+
+- Finish the search functionality to enable for it to function through my bootstrap navbar.
+- Improve the UX through spending more time on the CSS and JS of the site.
+- Add improved functionality for artists to manage their own portfolios.
+
 
