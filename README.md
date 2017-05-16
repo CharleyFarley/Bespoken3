@@ -64,8 +64,8 @@ Your application is to be deployed to Heroku / AWS.
 
 ## Entity Relationship Diagram
 
-![Diagram](https://photos.google.com/album/AF1QipO1fcv4cencgD4iDl1B0H3KDJXtWwGvGPR2qhOG)
-![ERD](http://imgur.com/gallery/XGcsY)
+![Diagram](https://cloud.githubusercontent.com/assets/12761260/26090251/fe97fc80-3a46-11e7-9f6a-8c36c2a25127.png)
+
 
 ## Wireframes
 
