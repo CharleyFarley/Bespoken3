@@ -1,46 +1,35 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+##Pain Point
 
-* Ruby version
+##Solution
 
-* System dependencies
+##Hosting Solution - Elastic Beanstalk
 
-* Configuration
+- I found that the performance of the free tier on Heroku was unsatisfactory, and I didn't want to lost potential views through high latency (Heroku servers are in the US and average over 300ms latency from my testing) and the soft bootup policy for free tier Heroku dynos. As an alternative, I have been getting low latency (19ms on average) pings and better performance from AWS servers in Sydney. 
 
-* Database creation
+- I also intend to offer developer services to my own clients, and need to find an acceptable alternative to Heroku to customers.
 
-* Database initialization
+- After some research, I concluded that AWS in Sydney with an EC2 instance and elastic beanstalk offered the optimum combination of performance and reasonable pricing for Melbourne developers.
 
-* How to run the test suite
+##Clone the .git file
 
-* Services (job queues, cache servers, search engines, etc.)
+##Assignment Criteria
 
-* Deployment instructions
+##Tools Used
 
-* ...
+- Trello
+- Remember the Milk
+- Figma
+- Sublime Text
+- 
 
-# CSS
+##Entity Relationship Diagram
 
-I took out 
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_bootstrap
- *= require_self
- */
 
- and used the SCSS to do the importing
+##Wireframes
+
+##Trello
+
+##Outstanding Tasks
+
