@@ -19,6 +19,36 @@ Bespoken is a 2-sided marketplace to allow for new artists to have works commiss
 
 ## Assignment Criteria
 
+**incomplete criteria is emphasised with ~~strikethrough~~**
+
+TOOLS AND METHODOLOGIES
+Trello or similar project management tool to be used to track progress of build.
+Show evidence of Slack conversations or use of other communication tools.
+Code review. Demonstrate that you have had your code reviewed by other students and that you have provided a code review for others.
+Github. Demonstrate use of frequent commits, pull requests, documentation.
+Use Agile development methodologies.
+~~Provide evidence you have used code quality tools (eg. Traceroute, Bullet, Brakeman, Rails Best Practices tool, RuboCop, RubyCritic, CodeClimate).~~
+
+RAILS APPLICATION CODE
+Demonstrate Ruby on Rails development skills.
+Create your application using Ruby on Rails.
+Demonstrate knowledge of Rails conventions.
+Use postgresql database in development.
+~~Use an API (eg. Omniauth, Geocoding, Maps, other..).~~
+Use appropriate gems.
+Use environmental variables to protect API keys etc.
+Implement a payment system for your product.
+Your app must send transactional emails (eg. using Mailgun).
+~~Your app should have an internal user messaging system.~~
+Your app will have some type of searching, sorting and or filtering capability.
+Your app will have some type of file uploading capability (eg. images).
+Your app will have authentication (eg. Devise, must have full functionality in place).
+Your app will have authorisation (users have restrictions on what they can see and edit).
+~~Your app will have an admin dashboard for the admin user to administrate the site.~~
+Document your application with a README that explains how to setup, configure and use your application.
+
+DEPLOYED APPLICATION
+Your application is to be deployed to Heroku / AWS.
 
 
 ## Tools Used
@@ -34,6 +64,7 @@ Bespoken is a 2-sided marketplace to allow for new artists to have works commiss
 
 ## Entity Relationship Diagram
 
+![Diagram](https://photos.google.com/album/AF1QipO1fcv4cencgD4iDl1B0H3KDJXtWwGvGPR2qhOG)
 
 ## Wireframes
 
